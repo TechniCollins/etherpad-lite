@@ -179,13 +179,10 @@
    * that the Etherpad server can access them
    */
 
-  /*
   "ssl" : {
-            "key"  : "/path-to-your/epl-server.key",
-            "cert" : "/path-to-your/epl-server.crt",
-            "ca": ["/path-to-your/epl-intermediate-cert1.crt", "/path-to-your/epl-intermediate-cert2.crt"]
+            "key"  : "/etc/nginx/ssl/live/${EP_DOMAIN:etherpad.vira.website}/fullchain.pem",
+            "cert" : "/etc/nginx/ssl/live/${EP_DOMAIN:etherpad.vira.website}/privkey.pem",
           },
-  */
 
   /*
    * The type of the database.
@@ -309,7 +306,7 @@
    * it to null disables Abiword and will only allow plain text and HTML
    * import/exports.
    */
-  "abiword": "${ABIWORD:null}",
+  "abiword": "${ABIWORD:/usr/bin/abiword}",
 
   /*
    * This is the absolute path to the soffice executable.
