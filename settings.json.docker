@@ -180,8 +180,8 @@
    */
 
   "ssl" : {
-            "key"  : "${SSL_KEY_PATH:/etc/nginx/ssl/live/etherpad.vira.website/fullchain.pem"},
-            "cert" : "${SSL_CERT_PATH:/etc/nginx/ssl/live/etherpad.vira.website/privkey.pem"}
+            "key"  : "${SSL_KEY_PATH:/etc/nginx/ssl/live/etherpad.vira.website/fullchain.pem}",
+            "cert" : "${SSL_CERT_PATH:/etc/nginx/ssl/live/etherpad.vira.website/privkey.pem}"
           },
 
   /*
