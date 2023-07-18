@@ -179,10 +179,10 @@
    * that the Etherpad server can access them
    */
 
-  /*"ssl" : {
+  "ssl" : {
             "key"  : "${SSL_KEY_PATH:/etc/nginx/ssl/live/etherpad.vira.website/fullchain.pem"},
             "cert" : "${SSL_CERT_PATH:/etc/nginx/ssl/live/etherpad.vira.website/privkey.pem"},
-          },*/
+          },
 
   /*
    * The type of the database.
