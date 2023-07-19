@@ -56,7 +56,7 @@ RUN apk add shadow bash
 # If any of the following args are set to the empty string, default
 # values will be chosen.
 ARG EP_HOME=
-ARG EP_UID=5001
+ARG EP_UID=0
 ARG EP_GID=0
 ARG EP_SHELL=
 
