@@ -108,7 +108,6 @@ RUN chmod -R g=u .
 
 USER root
 RUN cd src && npm link
-RUN chmod -R 777 /etc
 USER etherpad
 
 HEALTHCHECK --interval=20s --timeout=3s CMD ["etherpad-healthcheck"]
