@@ -179,13 +179,10 @@
    * that the Etherpad server can access them
    */
 
-  /*
-  "ssl" : {
-            "key"  : "/path-to-your/epl-server.key",
-            "cert" : "/path-to-your/epl-server.crt",
-            "ca": ["/path-to-your/epl-intermediate-cert1.crt", "/path-to-your/epl-intermediate-cert2.crt"]
-          },
-  */
+  /*"ssl" : {
+            "key"  : "${SSL_KEY_PATH:/etc/letsencrypt/live/etherpad.vira.website/fullchain.pem}",
+            "cert" : "${SSL_CERT_PATH:/etc/letsencrypt/live/etherpad.vira.website/privkey.pem}"
+          },*/
 
   /*
    * The type of the database.
@@ -229,7 +226,7 @@
     "noColors":         "${PAD_OPTIONS_NO_COLORS:true}",
     "showControls":     "${PAD_OPTIONS_SHOW_CONTROLS:true}",
     "showChat":         "${PAD_OPTIONS_SHOW_CHAT:true}",
-    "showLineNumbers":  "${PAD_OPTIONS_SHOW_LINE_NUMBERS:true}",
+    "showLineNumbers":  "${PAD_OPTIONS_SHOW_LINE_NUMBERS:false}",
     "useMonospaceFont": "${PAD_OPTIONS_USE_MONOSPACE_FONT:false}",
     "userName":         "${PAD_OPTIONS_USER_NAME:null}",
     "userColor":        "${PAD_OPTIONS_USER_COLOR:null}",
@@ -309,7 +306,7 @@
    * it to null disables Abiword and will only allow plain text and HTML
    * import/exports.
    */
-  "abiword": "${ABIWORD:null}",
+  "abiword": "${ABIWORD:/usr/bin/abiword}",
 
   /*
    * This is the absolute path to the soffice executable.
