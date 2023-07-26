@@ -31,7 +31,7 @@ ARG ETHERPAD_PLUGINS=
 #
 # EXAMPLE:
 #   INSTALL_ABIWORD=true
-ARG INSTALL_ABIWORD=true
+ARG INSTALL_ABIWORD=
 
 # Control whether libreoffice will be installed, enabling exports to DOC/PDF/ODT formats.
 # By default, it is not installed.
@@ -39,7 +39,7 @@ ARG INSTALL_ABIWORD=true
 #
 # EXAMPLE:
 #   INSTALL_LIBREOFFICE=true
-ARG INSTALL_SOFFICE=
+ARG INSTALL_SOFFICE=true
 
 # By default, Etherpad container is built and run in "production" mode. This is
 # leaner (development dependencies are not installed) and runs faster (among
